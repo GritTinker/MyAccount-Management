@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceOS - ระบบบัญชีและกระแสเงินสด Cash Flow</title>
+    <meta name="description" content="ระบบจัดการบัญชีและบริหารกระแสเงินสด รายสัปดาห์ รายเดือน รายวัน วิเคราะห์กำไรขาดทุน คำนวณจุดคุ้มทุน และจัดการสต็อกวัตถุดิบ">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Sarabun:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CDN with custom theme -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec37",
+                        "primary-hover": "#0fd330",
+                        "primary-content": "#0d1b10",
+                        "secondary-green": "#4c9a59",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102213",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#182c1b",
+                        "surface-dark-card": "#1f3723",
+                        "border-light": "#cfe7d3",
+                        "border-dark": "#2a422e",
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'Sarabun', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+                    }
+                },
+            },
+        }
+    </script>
+    
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-200 min-h-screen antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
